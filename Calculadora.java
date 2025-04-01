@@ -17,6 +17,11 @@ public class Calculadora {
             return 0;
         }
     }
+    // Método de resta
+    public int resta() {
+        return num1 - num2;
+    }
+
 
     // Método de suma
     public int suma() {
