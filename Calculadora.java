@@ -21,8 +21,10 @@ public class Calculadora {
     public int resta() {
         return num1 - num2;
     }
-
-
+    // Método de multiplicación
+    public int multiplicar() {
+        return num1 * num2;
+    }
     // Método de suma
     public int suma() {
         return num1 + num2;
