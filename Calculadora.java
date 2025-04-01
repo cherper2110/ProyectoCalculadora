@@ -25,6 +25,16 @@ public class Calculadora {
     public int multiplicar() {
         return num1 * num2;
     }
+    // Método de división
+    public int dividir() {
+    if (num2 != 0) {
+        return num1 / num2;
+    } else {
+        System.out.println("Error: No se puede dividir entre 0.");
+        return 0;
+    }
+}
+
     // Método de suma
     public int suma() {
         return num1 + num2;
