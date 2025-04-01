@@ -9,14 +9,24 @@ public class Calculadora {
     }
 
     // Método para realizar una operación según la entrada
-    public int realizarOperacion(String operacion) {
-        if (operacion.equals("suma")) {
-            return suma();
-        } else {
-            System.out.println("Operación no soportada aún.");
-            return 0;
+      public int realizarOperacion(String operacion) {
+        switch (operacion) {
+            case "suma":
+                return suma();
+            case "resta":
+                return resta();
+            case "multiplicacion":
+                return multiplicar();
+            case "division":
+                return dividir();
+            case "modulo":
+                return modulo();
+            default:
+                System.out.println("Operación no válida");
+                return 0;
         }
     }
+
     // Método de resta
     public int resta() {
         return num1 - num2;
